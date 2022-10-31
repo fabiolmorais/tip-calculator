@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tips Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <H1>Spli<br>tter</H1>
+  <section class="container">
+    <div class="left-side">
+      <label for="bill" class="description bill">Bill</label>
+      <div class="input">
+        <input type="text" id="bill" placeholder="0">
+        <label for="bill"><i class="fa-solid fa-dollar-sign dollar"></i></label>
+      </div>
+      <h3 class="description">Select Tip %</h3>
+      <div class="btn">
+        <button id="btn5" class="buttons" value="0.05">5%</button>
+        <button id="btn10" class="buttons" value="0.1">10%</button>
+        <button id="btn15" class="buttons" value="0.15">15%</button>
+        <button id="btn25" class="buttons" value="0.25">25%</button>
+        <button id="btn50" class="buttons" value="0.5">50%</button>
+        <input type="text" class="buttons" value="" id="btnCustom" placeholder="Custom">
+      </div>
+      <div class="text-inputErro">
+        <label for="numberPeople" class="description numberPeople">Number of People</label>
+        <small class="textError" hidden>Can't be zero</small>
+      </div>
+      <div class="input">
+        <input type="text" id="numberPeople" class="" value="" placeholder="0">
+        <label for="numberPeople"><i class="fa-solid fa-user user"></i></label>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="value">
+        <div class="tipAmount">
+          <div class="tipAmount-text">
+            <h3>Tip Amount</h3>
+            <h5>/ person</h5>
+          </div>
+          <span id="tipAmount">$0.00</span>
+        </div>
+        <div class="total">
+          <div class="total-text">
+            <h3>Total</h3>
+            <h5>/ person</h5>
+          </div>
+          <span id="total">$0.00</span>
+        </div>
+      </div>
+      <button class="reset" id="reset" disabled>Reset</button>
+    </div>
+  </section>
+</body>
+</html>
